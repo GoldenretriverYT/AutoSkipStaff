@@ -34,7 +34,7 @@ namespace AutoSkipStaff
             {
                 if (actor.AItype == AI.AIType.Employee)
                 {
-                    if (TimeOfDay.Instance.Hour >= actor.StaffOn-1 && TimeOfDay.Instance.Hour <= actor.StaffOff) anyEmployeeInOffice = true;
+                    if (TimeOfDay.Instance.Hour >= actor.StaffOn-1 && TimeOfDay.Instance.Hour < actor.StaffOff) anyEmployeeInOffice = true;
                     if(actor.CurrentState(false) != "At home" && actor.CurrentState(false) != "Sick" && actor.CurrentState(false) != "Vacation") {
                         DevConsole.Console.Log(actor.employee.Name + " in office (" + actor.CurrentState(false) + ")");
                         anyEmployeeInOffice = true;
