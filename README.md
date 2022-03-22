@@ -13,6 +13,9 @@ Since this mod depends on Reflection, which requires the mod to ask for privilig
 - Start the game and trust the mod. You probably have to enable it in the Mods menu too.
 - If you built it yourself, ou will have to create the folder & meta.tyd yourself.
 
+# Building
+Just clone this repo and open it in VS2022 (you will probably have to update the references)
+
 # Other stuff
 This mod ignore the "Auto-skip" option in the gameplay options. If you want to fully disable it, you will have to disable this mod too.<br><br>
 **This mod is made to work with Beta 1.**
